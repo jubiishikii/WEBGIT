@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Buy Adobo</title>
+  <title>Buy Sinigang</title>
   <style>
     body {
       margin: 0;
@@ -74,7 +74,7 @@
 <body>
   <div class="buy-section">
     <h2>Order Sinigang</h2>
-    <form action="#" method="post">
+    <form id="orderForm">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -98,8 +98,17 @@
       <label for="total">Total</label>
       <input type="text" id="total" name="total" value="₱299" readonly>
 
-      <button type="button" class="done-button" onclick="window.location.href='donesini.html'">Done</button>
+      <button type="submit" class="done-button">Done</button>
     </form>
   </div>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+      if (this.checkValidity()) {
+        event.preventDefault();
+        window.location.href = 'donesini.html';
+      }
+    });
+  </script>
 </body>
 </html>
