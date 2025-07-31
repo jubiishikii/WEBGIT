@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grow a Food</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #3a0f0f;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .top, .bottom {
+      height: 15%;
+    }
+
+    .middle {
+    flex: 1;
+    background-image: url('piks/asian-noodles-green-chives-red-chili-dark-slate-background-top-view-banner-website-cooking-con.jpg'); /* <-- Change to your actual image path */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <iframe src="top.html"></iframe>
+    </div>
+
+    <div class="middle">
+      <iframe name="middle" src="" style="background: url('piks/asian-noodles.jpg') center/contain no-repeat;"></iframe>
+    </div>
+
+    <div class="bottom">
+      <iframe name="bottom" src="buttom.html"></iframe>
+    </div>
+  </div>
+</body>
+</html>

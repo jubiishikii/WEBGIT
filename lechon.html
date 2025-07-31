@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .menu-section {
+      padding: 40px;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      align-items: start;
+    }
+
+    .menu-item {
+      background-color: #3a0f0f;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+
+    .buy-button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #b22222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-section">
+    <h2>Filipino Favorites</h2>
+    <div class="menu-grid">
+    <a href="adobs.html" style="text-decoration: none; color: inherit;">
+        <div class="menu-item">
+          <h3>Adobo</h3>
+          <p>Chicken or pork braised in soy sauce, vinegar, garlic, and bay leaves.</p>
+        </div>
+      </a>
+      <a href="sinigang.html" style="text-decoration: none; color: inherit;">
+        <div class="menu-item">
+          <h3>Sinigang</h3>
+          <p>A tangy tamarind soup with pork, shrimp, or fish and mixed vegetables.</p>
+        </div>
+      </a>
+      <a href="karekare.html" style="text-decoration: none; color: inherit;">
+        <div class="menu-item">
+          <h3>Kare-Kare</h3>
+          <p>Rich peanut stew with oxtail, tripe, and assorted vegetables.</p>
+        </div>
+      </a>
+        <div class="menu-item">
+            <img src="c:\Users\63967\Desktop\Tracking and Monitoring System of Procurement Transaction of Isabela State University Roxas Campus\Documents\WEBGIT\piks\ND-Lechon-Kawali-bflv-threeByTwoMediumAt2X.jpg" alt="Sinigang" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+            <h3>Lechon Kawali</h3>
+            <p><strong>Description:</strong> Deep-fried pork belly with crispy skin and tender meat, often served with liver sauce.</p>
+            <p><strong>Ingredients:</strong> Pork belly, salt, pepper, garlic, bay leaves, oil for frying.</p>
+            <p><strong>Cooking Style:</strong> Boiled until tender, then air-dried or chilled before deep-frying to achieve crispy texture.</p>
+            <p><strong>Serving Suggestion:</strong> Serve hot and crispy with liver sauce (sarsa), vinegar with garlic, or spicy soy sauce.</p>
+            <a href="buykawali.html" class="buy-button" style="text-align: center; display: inline-block; text-decoration: none;">Buy Now</a>           
+        </div>
+    </div>
+  </div>
+</body>
+</html>

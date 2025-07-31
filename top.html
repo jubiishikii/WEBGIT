@@ -1,0 +1,47 @@
+<div class="bottom-bar">
+  <div class="title">Grow a Food</div>
+  <div class="menu">
+    <button onclick="window.top.location.href = 'index.html'">Home</button>
+    <a href="menu.html" target="middle"><button>Menu</button></a>
+    <a href="about.html" target="middle"><button>About</button></a>
+  </div>
+</div>
+
+<style>
+  .bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .bottom-bar .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .menu {
+    display: flex;
+    gap: 10px;
+  }
+
+  .menu button {
+    background-color: #3a0f0f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .menu button:hover {
+    background-color: #5c1a1a;
+    transform: translateY(-2px);
+  }
+</style>

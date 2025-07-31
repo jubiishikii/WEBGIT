@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3-Row Layout with Top Iframe</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #3a0f0f; /* Maroon main background */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .top, .bottom {
+      height: 15%;
+      overflow: hidden;
+    }
+
+    .middle {
+    flex: 1;
+    background-image: url('piks/asian-noodles-green-chives-red-chili-dark-slate-background-top-view-banner-website-cooking-con.webp'); /* <-- Change to your actual image path */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <iframe src="top.html"></iframe>
+    </div>
+
+    <div class="middle">
+        <iframe src="menu.html"></iframe>
+    </div>
+
+    <div class="bottom">
+      <iframe src="bottom.html"></iframe> <!-- Optional: you can add bottom.html later -->
+    </div>
+  </div>
+</body>
+</html>

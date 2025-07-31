@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasty Bites Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #e94e1b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x600/?restaurant,food');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .menu {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .menu-item p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .contact {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #e94e1b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tasty Bites</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Delicious Food, Delivered Fresh</h1>
+    <p>Order now and enjoy your favorite meals at home!</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy grilled beef patty with lettuce, tomato & cheese. $8.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Fresh mozzarella, basil & tomato sauce on hand-tossed dough. $10.50</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/300x200/?pasta" alt="Pasta">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Creamy pasta with pancetta, parmesan, and black pepper. $11.99</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@tastybites.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>123 Foodie Street, Flavor Town</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Tasty Bites. All rights reserved.
+  </footer>
+
+</body>
+</html>
